@@ -97,8 +97,66 @@
 	],
 	"data science survey": [
 		"Kaggle",
+		20800,
 		2018,
 		"2018 Kaggle Machine Learning and Data Science Survey",
-		"The most comprehensive dataset available on the state of ML and data science"
+		"The most comprehensive dataset available on the state of ML and data science",
+		"https://www.kaggle.com/datasets/kaggle/kaggle-survey-2018"
+	],
+	"CAMEL AI- Biology Problems:Solutions": [
+		"Kaggle",
+		25,
+		2023,
+		"CAMEL AI- Biology Problems:Solutions",
+		"Biology Problem-Solution Pairs for LLM Training",
+		"https://www.kaggle.com/datasets/thedevastator/synbio-problem-solution-dataset"
+	],
+	"Computer Science Conferences and Ranking": [
+		"Kaggle",
+		41,
+		2024,
+		"Computer Science Conferences and Ranking",
+		"Computer science conferences play a crucial role in fostering collaboration, knowledge sharing, and innovation within the field. Among the top-tier conferences, the Association for Computing Machinery (ACM) International Conference on Computer Science and Information Technology (ICCSIT) holds a prominent position, often earning an 'A' rank. This conference attracts researchers and professionals globally, providing a platform for discussing cutting-edge research and emerging trends.",
+		"https://www.kaggle.com/datasets/azminetoushikwasi/top-computer-science-conference-and-ranking"
+	],
+	"Data_Science_Job_Postings_And_Skills": [
+		"Kaggle",
+		1736,
+		2024,
+		"catapulthacks/science_datasets/Data_Science_Job_Postings_And_Skills.csv",
+		"LinkedIn is a popular professional networking platform with millions of job postings across various industries. This dataset provides a raw dump of data science-related job postings collected from LinkedIn. It includes information about job titles, companies, locations, search parameters, and other relevant details. The main objective of this dataset is not only to provide insights into the data science job market and the skills required by professionals in this field but also to offer users an opportunity to practice their data cleaning skills. By working with this dataset, users can gain hands-on experience in cleaning and preprocessing raw data, a critical skill for aspiring data scientists.",
+		"https://www.kaggle.com/datasets/asaniczka/data-science-job-postings-and-skills"
+	],
+	"Healthcare NLP- LLMs, Transformers": [
+		"Kaggle",
+		2997,
+		2024,
+		"Healthcare NLP- LLMs, Transformers",
+		"MedQuAD includes 47,457 medical question-answer pairs created from 12 NIH websites (e.g. cancer.gov, niddk.nih.gov, GARD, MedlinePlus Health Topics). The collection covers 37 question types (e.g. Treatment, Diagnosis, Side Effects) associated with diseases, drugs and other medical entities such as tests.",
+		"https://www.kaggle.com/datasets/jpmiller/layoutlm"
+	],
+	"Job details of popular jobs in data science field in india": [
+		"Kaggle",
+		232,
+		2022,
+		"Job details of popular jobs in data science field in india",
+		"This data is entirely RAW with only the duplicate entries removed. This dataset will be suitable for beginners looking for a portfolio project as one needs to clean it before drawing useful insights. For reference, you can see my similar analysis on another dataset on Naukri here data science jobs.",
+		"https://www.kaggle.com/datasets/sridharstreaks/popular-jobs-titles-in-data-science-field-in-india"
+	],
+	"palmer_penguins_extended": [
+		"Kaggle",
+		873,
+		2023,
+		"palmer_penguins_extended",
+		"This dataset is an extended version of the classic Palmer's Penguins dataset, providing a more comprehensive view of penguin characteristics and their environment. It includes new features such as diet, year of observation, life stage, and health metrics, in addition to the original attributes. The dataset spans from 2021 to 2025.",
+		"https://www.kaggle.com/datasets/samybaladram/palmers-penguin-dataset-extended"
+	],
+	"SciTail Multiple Choice Science Exams": [
+		"Kaggle",
+		74,
+		2023,
+		"SciTail Multiple Choice Science Exams",
+		"The Scitail dataset is your gateway to unlocking powerful and advanced Sci-Fi Natural Language Inference (NLI) algorithms. With data sourced from popular books, movies, and TV shows in the genre, this dataset gives you the opportunity to develop and train NLI algorithms capable of understanding complex sci-fi conversations. Containing seven distinct formats including training sets for both predictor format and datagem format as well as testing sets in tsv format and SNLI format - all containing the same fields but in varied structures - this is an essential resource for any scientist looking to explore the realm of sci-fi NLI! Train your algorithm today with Scitail; unlock a future of supercharged Sci-Fi language processing!",
+		"https://www.kaggle.com/datasets/thedevastator/futuristic-natural-language-inference-with-the-s"
 	]
 }

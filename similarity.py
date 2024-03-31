@@ -4,6 +4,8 @@ from gensim.models import Word2Vec
 import gensim
 from nltk.data import find
 import numpy as np
+import nltk
+nltk.download('word2vec_sample')
 
 class Similarity:
 
@@ -33,13 +35,13 @@ class Similarity:
             scores[key] = cosine_similarity([avg_vec], [vec])[0][0]
             #scores[key] = self.model.wv.similarity([avg_vec], [vec])
             #print(scores[key])
-            
+            # print(key)
+            # print("cosine similarity", cosine_similarity(["statistic data science"], [vec])[0][0])
         #scores_s = {k: v for k, v in sorted(scores.items(), key=lambda item: item[1], reverse=True)}
         scores_s = sorted(scores.items(), key=lambda x:x[1], reverse=True)
         #return (scores_s[0], scores_s[1], scores_s[2])
         return scores_s
-
-        
+# print(Similarity().calc_sim('statistic data science', 'data science'))
 
 
 
