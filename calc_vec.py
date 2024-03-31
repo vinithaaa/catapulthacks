@@ -3,7 +3,13 @@ from gensim.models import Word2Vec
 import gensim
 import os
 import pandas as pd
-import json
+
+from nltk.test.gensim_fixt import setup_module
+setup_module()
+
+from nltk.data import find
+import nltk
+import numpy as np
 
 vec_reps = {}
 
@@ -30,8 +36,7 @@ def calculate_word2vec(file_path, weight):
 folder_path = 'datasets/'
 
 # Load Word2Vec model (you need to train or load a pre-trained model)
-model = Word2Vec.load('path_to_your_word2vec_model')
-input_vector = model.wv['your_predefined_word']
+model = Word2Vec.load('brown.embedding')
 # Set weight for title
 weight = 1  # You can tune this value
 #heap = []
@@ -44,8 +49,8 @@ for file_name in os.listdir(folder_path):
         #heap.append((similarity, file_name))
         #print(f"Word2Vec representation for {file_name}: {similarity}")
 
-with open('vec_rep.txt', 'w') as f:
-    f.write(json.dumps(vec_reps))
+
+np.save('vec_rep.npy', vec_reps)
 
 
 #heap.sort(reverse=True)
