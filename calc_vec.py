@@ -33,7 +33,7 @@ def calculate_word2vec(file_path, weight):
     #return similarity
 
 # Set path to the folder containing CSV files
-folder_path = 'datasets/'
+folder_path = 'science_datasets/'
 
 # Load Word2Vec model (you need to train or load a pre-trained model)
 model = Word2Vec.load('brown.embedding')
