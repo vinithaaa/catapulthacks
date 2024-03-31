@@ -1,4 +1,4 @@
-species,island,bill_length_mm,bill_depth_mm,flipper_length_mm,body_mass_g,sex,diet,life_stage,health_metrics,year
+species,island,bill length mm,bill depth mm,flipper length mm,body mass g,sex,diet,life stage,health metrics,year
 Adelie,Biscoe,53.4,17.8,219.0,5687.0,female,fish,adult,overweight,2021
 Adelie,Biscoe,49.3,18.1,245.0,6811.0,female,fish,adult,overweight,2021
 Adelie,Biscoe,55.7,16.6,226.0,5388.0,female,fish,adult,overweight,2021

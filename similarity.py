@@ -9,12 +9,16 @@ class Similarity:
     def __init__(self):
         self.model = Word2Vec.load('brown.embedding')
         self.dataset = np.load('vec_rep.npy', allow_pickle=True).item()
+        self.weight = 3
 
-
-    def calc_sim(self, input_words):
-        word_list = gensim.utils.simple_preprocess(input_words)
+    def calc_sim(self, title, input_words):
+        title += ' '
+        title *= self.weight
+        #print(title)
+        #print(title + ' ' + input_words)
+        word_list = gensim.utils.simple_preprocess(title + ' ' + input_words)
         bools = [True if word in self.model.wv else False for word in word_list]
-        print(bools)
+        #print(bools)
         word_vecs = np.array([self.model.wv[word] for word in word_list if word in self.model.wv])
         #print(word_vecs)
         avg_vec = np.sum(word_vecs, axis=0) / sum(bools)
@@ -37,5 +41,5 @@ class Similarity:
 
 
 sim = Similarity()
-print(sim.calc_sim('earnings ($million) Sport'))
+print(sim.calc_sim('movie', 'ticket, director, cast, genre'))
 

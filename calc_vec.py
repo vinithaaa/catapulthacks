@@ -39,7 +39,7 @@ folder_path = 'datasets/'
 # Load Word2Vec model (you need to train or load a pre-trained model)
 model = Word2Vec.load('brown.embedding')
 # Set weight for title
-weight = 1  # You can tune this value
+weight = 3  # You can tune this value
 #heap = []
 # Iterate through all CSV files in the folder
 
