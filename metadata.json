@@ -1,0 +1,104 @@
+{
+	"Fifa 23 Players Data": [
+		"Kaggle",
+		4847,
+		2023,
+		"Fifa 23 Players Data",
+		"FIFA 23 is a football simulation video game published by Electronic Arts. It is the 30th and final installment in the FIFA series that is developed by EA Sports, and released worldwide on 30 September 2022 for PC, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S and Google Stadia. The role of performance analysis within football is more important than ever. Whether it’s the opposition, potential transfer targets or last weekend’s fixture, analysing performances and data can be the difference between success and failure.",
+		"https://www.kaggle.com/datasets/sanjeetsinghnaik/fifa-23-players-dataset"
+	],
+	"Forbes Richest Atheletes (Forbes Richest Athletes 1990-2020)": [
+		"Kaggle",
+		7112,
+		2021,
+		"Fifa 23 Players Data",
+		"Here is a completel list of the world's highest-paid athletes since the first list published by Forbes in 1990. In 2002, they changed the reporting period from the full calendar year to June-to-June, and consequently, there are no records for 2001.",
+		"https://www.kaggle.com/datasets/parulpandey/forbes-highest-paid-athletes-19902019"
+	],
+	"Olympic Swimming Results 1912to2020": [
+		"Kaggle",
+		1695,
+		2023,
+		"Olympic Swimming Results 1912to2020",
+		"Swimming is one of the most popular Olympic sports where individual competitors race over various distance events in butterfly, backstroke, breaststroke, freestyle, and individual medley. Additionally, four swimmers can take part in a freestyle or medley relay. A medley relay consists of four swimmers each swimming a different stroke - ordered as backstroke, breaststroke, butterfly, and freestyle - over a set distance. Swimming has been a sport at every modern Summer Olympics but has only been open to women since 1912.",
+		"https://www.kaggle.com/datasets/datasciencedonut/olympic-swimming-1912-to-2020"
+	],
+	"Sport car price": [
+		"Kaggle",
+		8202,
+		2023,
+		"Sport car price",
+		"This dataset contains information about the prices of different sports cars from various manufacturers. The dataset includes the make and model of the car, the year of production, the engine size, the horsepower, the torque, the 0-60 MPH time, and the price in USD. The dataset is useful for analyzing the prices of different sports cars and identifying trends in the market.",
+		"https: //www.kaggle.com/datasets/bhanupratapbiswas/olympic-data"
+	],
+	"dataset olympics": [
+		"Kaggle",
+		6437,
+		2023,
+		"dataset olympics",
+		"The Olympic Games are an international multi-sport event held every four years in which thousands of athletes from around the world participate in various sports competitions. The Olympics are one of the most significant and prestigious sporting events globally, promoting unity, friendship, and fair play among nations.",
+		"https: //www.kaggle.com/datasets/bhanupratapbiswas/olympic-data"
+	],
+	"fifa eda stats": [
+		"Kaggle",
+		1912,
+		2022,
+		"FIFA EDA stats",
+		"You want to create your own football club named ‘ultralearnManral’. Your club don't have a team yet. Team will require to hire players for their roster. You wants to make players selection decisions using past data. Create some reports/kind of things which recommends data backed players for main team To start with, a total 14-16 players are required. Collected data contains information about players, clubs they are currently playing for and various performance measures. NOTE: As always assume budget for hiring players to be limited, team needs 18-22 possible players to choose from. Formulating a report will help management/stack-holders make some decision regarding potential players.",
+		"https://www.kaggle.com/datasets/mukeshmanral/fifa-data-for-eda-and-stats"
+	],
+	"sports clubs operations and costs": [
+		"Kaggle",
+		128,
+		2023,
+		"sports clubs operations and costs",
+		"This table contains information about sports clubs registered with the Chamber of Commerce (excluding water sports and professional sports clubs). Information about their members, accommodation, deployment of volunteers and employees (not) in salaried employment and the composition of income and expenses is presented in this table. The data can be broken down into the various disciplines: Power lifting and combat sports clubs, individual indoor sports clubs, indoor team sports clubs, swimming and diving clubs, other indoor sports clubs, athletic clubs, golf clubs, sport fishing clubs, horse riding clubs, tennis clubs, outdoor team sports clubs (excluding football), football clubs, cycling clubs and other outdoor sports clubs.",
+		"https://www.kaggle.com/datasets/niramay/sports-clubs-operation-costs-and-revenues"
+	],
+	"Microsoft_Stock": [
+		"Kaggle",
+		7261,
+		2021,
+		"Microsoft_Stock",
+		"This file contains the stock information of Microsoft from 04/01/2015 to 04/01/2021",
+		"https://www.kaggle.com/datasets/vijayvvenkitesh/microsoft-stock-time-series-analysis"
+	],
+	"Room Occupancy Detection Data IOT": [
+		"Kaggle",
+		1239,
+		2020,
+		"Room Occupancy Detection Data IOT",
+		"Accurate occupancy detection of an office room from light, temperature, humidity and CO2 measurements using statistical learning models. ",
+		"https://www.kaggle.com/datasets/kukuroo3/room-occupancy-detection-data-iot-sensor"
+	],
+	"Solar Power Generation Data": [
+		"Kaggle",
+		41300,
+		2022,
+		"Solar Power Generation Data",
+		"This data has been gathered at two solar power plants in India over a 34 day period. It has two pairs of files - each pair has one power generation dataset and one sensor readings dataset. The power generation datasets are gathered at the inverter level - each inverter has multiple lines of solar panels attached to it. The sensor data is gathered at a plant level - single array of sensors optimally placed at the plant.",
+		"https://www.kaggle.com/datasets/anikannal/solar-power-generation-data"
+	],
+	"Baggage Complaints": [
+		"Kaggle",
+		1725,
+		2023,
+		"Baggage Complaints",
+		"Anyone who travels by air knows that occasional problems are inevitable. Flights can be delayed or cancelled due to weather conditions, mechanical problems, or labor strikes, and baggage can be lost, delayed, damaged, or pilfered. Given that many airlines are now charging for bags, issues with baggage are particularly annoying. Baggage problems can have a serious impact on customer loyalty, and can be costly to the airlines (airlines often have to deliver bags). Air carriers report flight delays, cancellations, overbookings, late arrivals, baggage complaints, and other operating statistics to the U.S. government, which compiles the data and reports it to the public. The data set contains monthly observations from 2004 to 2010 for United Airlines, American Eagle, and Hawaiian Airlines. ",
+		"https://www.kaggle.com/datasets/gabrielsantello/airline-baggage-complaints-time-series-dataset"
+	],
+	"Cinema Tickets": [
+		"Kaggle",
+		9331,
+		2021,
+		"Cinema Tickets",
+		"About eight months sales history of different cinemas with detailed data of screening , during 2018 with encoded annonymized locations. ",
+		"https://www.kaggle.com/datasets/arashnic/cinema-ticket"
+	],
+	"data science survey": [
+		"Kaggle",
+		2018,
+		"2018 Kaggle Machine Learning and Data Science Survey",
+		"The most comprehensive dataset available on the state of ML and data science"
+	]
+}
