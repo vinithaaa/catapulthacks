@@ -55,6 +55,38 @@
 		"This table contains information about sports clubs registered with the Chamber of Commerce (excluding water sports and professional sports clubs). Information about their members, accommodation, deployment of volunteers and employees (not) in salaried employment and the composition of income and expenses is presented in this table. The data can be broken down into the various disciplines: Power lifting and combat sports clubs, individual indoor sports clubs, indoor team sports clubs, swimming and diving clubs, other indoor sports clubs, athletic clubs, golf clubs, sport fishing clubs, horse riding clubs, tennis clubs, outdoor team sports clubs (excluding football), football clubs, cycling clubs and other outdoor sports clubs.",
 		"https://www.kaggle.com/datasets/niramay/sports-clubs-operation-costs-and-revenues"
 	],
+	"Microsoft_Stock": [
+		"Kaggle",
+		7261,
+		2021,
+		"Microsoft_Stock",
+		"This file contains the stock information of Microsoft from 04/01/2015 to 04/01/2021",
+		"https://www.kaggle.com/datasets/vijayvvenkitesh/microsoft-stock-time-series-analysis"
+	],
+	"Room Occupancy Detection Data IOT": [
+		"Kaggle",
+		1239,
+		2020,
+		"Room Occupancy Detection Data IOT",
+		"Accurate occupancy detection of an office room from light, temperature, humidity and CO2 measurements using statistical learning models. ",
+		"https://www.kaggle.com/datasets/kukuroo3/room-occupancy-detection-data-iot-sensor"
+	],
+	"Solar Power Generation Data": [
+		"Kaggle",
+		41300,
+		2022,
+		"Solar Power Generation Data",
+		"This data has been gathered at two solar power plants in India over a 34 day period. It has two pairs of files - each pair has one power generation dataset and one sensor readings dataset. The power generation datasets are gathered at the inverter level - each inverter has multiple lines of solar panels attached to it. The sensor data is gathered at a plant level - single array of sensors optimally placed at the plant.",
+		"https://www.kaggle.com/datasets/anikannal/solar-power-generation-data"
+	],
+	"Baggage Complaints": [
+		"Kaggle",
+		1725,
+		2023,
+		"Baggage Complaints",
+		"Anyone who travels by air knows that occasional problems are inevitable. Flights can be delayed or cancelled due to weather conditions, mechanical problems, or labor strikes, and baggage can be lost, delayed, damaged, or pilfered. Given that many airlines are now charging for bags, issues with baggage are particularly annoying. Baggage problems can have a serious impact on customer loyalty, and can be costly to the airlines (airlines often have to deliver bags). Air carriers report flight delays, cancellations, overbookings, late arrivals, baggage complaints, and other operating statistics to the U.S. government, which compiles the data and reports it to the public. The data set contains monthly observations from 2004 to 2010 for United Airlines, American Eagle, and Hawaiian Airlines. ",
+		"https://www.kaggle.com/datasets/gabrielsantello/airline-baggage-complaints-time-series-dataset"
+	],
 	"data science survey": [
 		"Kaggle",
 		2018,
