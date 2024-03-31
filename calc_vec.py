@@ -26,8 +26,8 @@ def calculate_word2vec(file_path, weight):
     text += ' '.join(df.columns)
     # Calculate average Word2Vec representation
     word_list = gensim.utils.simple_preprocess(text)
-    bools = [True if word in model.wv else False for word in word_list]
-    word_vectors = np.array([model.wv[word] for word in word_list if word in model.wv])
+    bools = [True if word in model else False for word in word_list]
+    word_vectors = np.array([model[word] for word in word_list if word in model])
     avg_vector = np.sum(word_vectors, axis=0) / sum(bools)
     #similarity = util.cosine_similarity([avg_vector], [input_vector])[0][0]
     vec_reps[title] = avg_vector
@@ -37,7 +37,8 @@ def calculate_word2vec(file_path, weight):
 folder_path = 'datasets/'
 
 # Load Word2Vec model (you need to train or load a pre-trained model)
-model = Word2Vec.load('brown.embedding')
+#model = Word2Vec.load('brown.embedding')
+model = gensim.models.KeyedVectors.load_word2vec_format(str(find('models/word2vec_sample/pruned.word2vec.txt')), binary=False)
 # Set weight for title
 weight = 3  # You can tune this value
 #heap = []

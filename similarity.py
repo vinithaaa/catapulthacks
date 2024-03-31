@@ -2,12 +2,14 @@
 from sklearn.metrics.pairwise import cosine_similarity
 from gensim.models import Word2Vec
 import gensim
+from nltk.data import find
 import numpy as np
 
 class Similarity:
 
     def __init__(self):
-        self.model = Word2Vec.load('brown.embedding')
+        #self.model = Word2Vec.load('brown.embedding')
+        self.model = gensim.models.KeyedVectors.load_word2vec_format(str(find('models/word2vec_sample/pruned.word2vec.txt')), binary=False)
         self.dataset = np.load('vec_rep.npy', allow_pickle=True).item()
         self.weight = 3
 
@@ -17,9 +19,9 @@ class Similarity:
         #print(title)
         #print(title + ' ' + input_words)
         word_list = gensim.utils.simple_preprocess(title + ' ' + input_words)
-        bools = [True if word in self.model.wv else False for word in word_list]
+        bools = [True if word in self.model else False for word in word_list]
         #print(bools)
-        word_vecs = np.array([self.model.wv[word] for word in word_list if word in self.model.wv])
+        word_vecs = np.array([self.model[word] for word in word_list if word in self.model])
         #print(word_vecs)
         avg_vec = np.sum(word_vecs, axis=0) / sum(bools)
 
@@ -29,6 +31,7 @@ class Similarity:
             #print(vec)
             #print(avg_vec)
             scores[key] = cosine_similarity([avg_vec], [vec])[0][0]
+            #scores[key] = self.model.wv.similarity([avg_vec], [vec])
             #print(scores[key])
             
         #scores_s = {k: v for k, v in sorted(scores.items(), key=lambda item: item[1], reverse=True)}
@@ -39,7 +42,4 @@ class Similarity:
         
 
 
-
-sim = Similarity()
-print(sim.calc_sim('movie', 'ticket, director, cast, genre'))
 
