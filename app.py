@@ -151,18 +151,38 @@ if 'similar_datasets' in st.session_state and st.session_state['similar_datasets
 
     display_metadata(dataset_name, metadata, similarity_score, dataset_path)
 
+    data2 = st.session_state['similar_datasets'][1]
+    
+    dataset_name2, similarity_score2 = data2
+    dataset_path2 = os.path.join(directory, f"{dataset_name2}.csv")
+    metadata2 = json_data.get(dataset_name2, ["Not Found"] * 6)
 
-    st.text("Ask questions about the dataset:")
+    
+
+    st.text("Ask questions about this dataset:")
     col3, col4 = st.columns([3, 1])
     with col3:
         user_question = st.text_input("", placeholder="Enter your question here...", key="ai_question")
     with col4:
         ask_button = st.button('Ask', key='ask_button')
-
+    
     if 'ai_question' in st.session_state and ask_button and st.session_state['ai_question']:
         agent = create_csv_agent(OpenAI(temperature=0), dataset_path, verbose=True)
         answer = agent.run(st.session_state['ai_question'])
         st.text_area("Answer", answer, height=150)
+    display_metadata(dataset_name2, metadata2, similarity_score2, dataset_path2)
+    st.text("Ask questions about this dataset:")
+    col5, col6 = st.columns([3, 1])
+    with col5:
+        user_question2 = st.text_input("", placeholder="Enter your question here...", key="ai_question2")
+    with col6:
+        ask_button2 = st.button('Ask', key='ask_button2')
+    
+    if 'ai_question' in st.session_state and ask_button and st.session_state['ai_question']:
+        agent2 = create_csv_agent(OpenAI(temperature=0), dataset_path2, verbose=True)
+        answer2 = agent2.run(st.session_state['ai_question'])
+        st.text_area("Answer", answer2, height=150)
+
 elif 'similar_datasets' in st.session_state and not st.session_state['similar_datasets']:
     st.error("Could not find similar datasets.")
 
