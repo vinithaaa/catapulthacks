@@ -3,6 +3,11 @@ from gensim.models import Word2Vec
 import gensim
 import os
 import pandas as pd
+import json
+
+vec_reps = {}
+
+
 
 # Function to calculate Word2Vec representation
 def calculate_word2vec(file_path, weight):
@@ -10,37 +15,41 @@ def calculate_word2vec(file_path, weight):
     df = pd.read_csv(file_path)
     # Combine title and column names
     text = file_path.split('/')[-1].split('.')[0].replace('_', ' ')  # Extract title from file name
+    title = text
+    text *= weight
     text += ' '.join(df.columns)
-    # TODO
-        # get data credibility values from dataset, as well as using wget
     # Calculate average Word2Vec representation
     word_list = gensim.utils.simple_preprocess(text)
     word_vectors = [model.wv[word] for word in word_list if word in model.wv]
     avg_vector = sum(word_vectors) / (len(word_vectors) + weight)
-    similarity = util.cosine_similarity([avg_vector], [input_vector])[0][0]
-        
-    return similarity
+    #similarity = util.cosine_similarity([avg_vector], [input_vector])[0][0]
+    vec_reps[title] = avg_vector
+    #return similarity
 
 # Set path to the folder containing CSV files
-folder_path = 'datasets'
+folder_path = 'datasets/'
 
 # Load Word2Vec model (you need to train or load a pre-trained model)
 model = Word2Vec.load('path_to_your_word2vec_model')
 input_vector = model.wv['your_predefined_word']
 # Set weight for title
 weight = 1  # You can tune this value
-heap = []
+#heap = []
 # Iterate through all CSV files in the folder
 
 for file_name in os.listdir(folder_path):
     if file_name.endswith('.csv'):
         file_path = os.path.join(folder_path, file_name)
-        similarity = calculate_word2vec(file_path, weight)
-        heap.append((similarity, file_name))
-        print(f"Word2Vec representation for {file_name}: {similarity}")
+        calculate_word2vec(file_path, weight)
+        #heap.append((similarity, file_name))
+        #print(f"Word2Vec representation for {file_name}: {similarity}")
 
-heap.sort(reverse=True)
-print(heap)
+with open('vec_rep.txt', 'w') as f:
+    f.write(json.dumps(vec_reps))
+
+
+#heap.sort(reverse=True)
+#print(heap)
 
 
 
