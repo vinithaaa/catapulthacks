@@ -26,8 +26,8 @@ def calculate_word2vec(file_path, weight):
     text += ' '.join(df.columns)
     # Calculate average Word2Vec representation
     word_list = gensim.utils.simple_preprocess(text)
-    word_vectors = [model.wv[word] for word in word_list if word in model.wv]
-    avg_vector = sum(word_vectors) / len(word_vectors)
+    word_vectors = np.array([model.wv[word] for word in word_list if word in model.wv])
+    avg_vector = np.sum(word_vectors, axis=1) / len(word_vectors)
     #similarity = util.cosine_similarity([avg_vector], [input_vector])[0][0]
     vec_reps[title] = avg_vector
     #return similarity
